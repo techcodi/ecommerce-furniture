@@ -1,0 +1,149 @@
+:root {
+  --color-home: #fbebb5;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-primary: #9f9f9f;
+  --color-secondary: #d9d9d9;
+  --color-follow: #fafafa;
+}
+
+.shop {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-self: center;
+  padding: 2rem 4rem;
+  gap: 2rem;
+}
+.grid img {
+  width: 10rem;
+  height: 10rem;
+}
+.grid button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  background-color: var(--color-home);
+  font-size: 14px;
+  width: 80%;
+  font-weight: 600;
+  padding: 8px 12px;
+  margin-top: 2rem;
+  transition: 300ms ease;
+}
+.grid button:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+.section-conatiner {
+  padding: 2rem 4rem;
+}
+.btn-next {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-size: 14px;
+  border: none;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+.btns {
+  text-align: center;
+}
+@media screen and (max-width: 854px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+  .section-conatiner {
+    padding: 1rem;
+  }
+}
+/* +++++++++++++++Shoping head */
+.shopHead_Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.shopHead {
+  background-image: url("/Rectangle 1.png");
+  height: 20rem;
+  width: 100%;
+}
+.shop-cont-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.shop-cont-details span {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.shop-cont-details span a {
+  border-bottom: none;
+  margin: 0px;
+}
+
+/* Filter */
+.s-f-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.s-f-left span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.shop-f-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+.shop-f-container input {
+  width: 30%;
+  background-color: #fff;
+  border: none;
+  border-radius: 3rem;
+  padding: 8px 12px;
+  outline: none;
+}
+/* ===================Faqs */
+.productFaq {
+  padding: 4rem;
+  background-color: #f4f4f4;
+}
+.faq_con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.faq_con p {
+  color: #9f9f9f;
+}
+
+@media screen and (max-width: 700px) {
+  .shop-f-container input {
+    width: 70%;
+  }
+  .productFaq {
+    padding: 2rem;
+  }
+}
